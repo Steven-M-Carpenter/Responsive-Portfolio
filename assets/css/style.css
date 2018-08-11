@@ -29,6 +29,7 @@ header {
 h1 {
     font-family: Georgia, Times, 'Times New Roman', serif;
     margin: 0;
+    margin-left: 10%;
     background-color: #4aaaa5;
     color: white;
     display: inline-block;  /*This was killing me!!!!*/
@@ -290,7 +291,7 @@ footer {
 @media screen and (max-width: 980px) {
 
     .page-header {
-        background-color: red; 
+        background-color: white; 
     }
 
     .nav-links {
@@ -307,6 +308,16 @@ footer {
         margin-left: 5%; 
         margin-right: 5%; 
     }
+
+    .rolePlayingGame-image {
+        float: left;
+        margin-right: 25%;  
+    }
+
+    .infoWidget-image {
+        float: left;
+        margin-right: 25%; 
+    }
 }    
 
 
@@ -322,7 +333,12 @@ footer {
 @media screen and (max-width: 768px) {
 
     .page-header {
-        background-color: blue; 
+        background-color: white; 
+    }
+
+    h1 {
+        text-align: center; 
+        margin-left: 5%;
     }
 
     .nav-links {
@@ -367,14 +383,16 @@ footer {
 @media screen and (max-width: 640px) {
 
     .page-header {
-        background-color: yellow;
+        background-color: white;
         width: 100%; 
         min-width: 200px;
+        padding-bottom: 5px;
     }
 
     .full-header {
         width: 100%;
         min-width: 200px;
+        text-align: center;
     }
 
     header {
@@ -389,6 +407,7 @@ footer {
         width: 100%; 
         text-align: center; 
         min-width: 200px;
+        margin-left: 0;
     }
 
     .nav-links {
@@ -397,13 +416,14 @@ footer {
         clear: right; 
         text-align: center;
         margin-top: 2%;
-        margin-right: 3%; 
+        /* margin-right: 3%;  */
         font-size: 12px;
     }
 
     .full-content {
         width: 100%; 
         margin-right: 5%;
+        min-width: 200px;
     }
 
     #content1 {
